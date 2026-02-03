@@ -4,6 +4,7 @@ canvaskit/
 icons/
 *.js
 *.html
+!index.html
 *.json
 *.png
 .last_build_id
