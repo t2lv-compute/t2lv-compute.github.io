@@ -1,0 +1,10 @@
+# Ignore root-level build output (only serve from screentimecheckup/)
+assets/
+canvaskit/
+icons/
+*.js
+*.html
+*.json
+*.png
+.last_build_id
+\!screentimecheckup/
