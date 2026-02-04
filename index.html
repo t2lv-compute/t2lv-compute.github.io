@@ -1,10 +1,193 @@
-<\!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=/screentimecheckup/">
-  <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t2lv-compute | Projects</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --muted: #666;
+            --card-bg: #fff;
+            --border: #e0e0e0;
+            --accent-green: #1B5E20;
+            --accent-blue: #1565C0;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #121212;
+                --text: #e0e0e0;
+                --muted: #999;
+                --card-bg: #1e1e1e;
+                --border: #333;
+                --accent-green: #4CAF50;
+                --accent-blue: #42A5F5;
+            }
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 24px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-top: 24px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            color: var(--muted);
+        }
+        .projects {
+            display: grid;
+            gap: 24px;
+        }
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+        .project-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .project-icon.green {
+            background: var(--accent-green);
+            color: white;
+        }
+        .project-icon.blue {
+            background: var(--accent-blue);
+            color: white;
+        }
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        .project-description {
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+        }
+        .link-btn:hover {
+            opacity: 0.85;
+        }
+        .link-btn.primary {
+            background: var(--accent-green);
+            color: white;
+        }
+        .link-btn.primary.blue {
+            background: var(--accent-blue);
+        }
+        .link-btn.secondary {
+            background: var(--border);
+            color: var(--text);
+        }
+        footer {
+            margin-top: 64px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--muted);
+        }
+    </style>
 </head>
 <body>
-  <p>Redirecting to <a href="/screentimecheckup/">Screen Time Checkup</a>...</p>
+    <div class="container">
+        <header>
+            <h1>t2lv-compute</h1>
+            <p class="subtitle">Projects & Tools</p>
+        </header>
+
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon green">&#9201;</div>
+                    <div class="project-title">Screen Time Checkup</div>
+                </div>
+                <p class="project-description">
+                    A productivity app that helps you stay aware of how you spend your time with periodic check-in reminders. Track what you're doing vs. what you should be doing.
+                </p>
+                <div class="project-links">
+                    <a href="/screentimecheckup/" class="link-btn primary">Open Web App</a>
+                    <a href="/screen-time-checkup.apk" class="link-btn secondary">Download APK</a>
+                    <a href="/privacy-policy/" class="link-btn secondary">Privacy Policy</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon blue">&#127908;</div>
+                    <div class="project-title">Speech Time Estimate</div>
+                </div>
+                <p class="project-description">
+                    Estimate how long it will take to deliver a speech or presentation based on your script's word count and speaking pace.
+                </p>
+                <div class="project-links">
+                    <a href="/speechTimeEstimate/" class="link-btn primary blue">Open App</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><a href="https://github.com/t2lv-compute">GitHub</a></p>
+        </footer>
+    </div>
 </body>
 </html>
