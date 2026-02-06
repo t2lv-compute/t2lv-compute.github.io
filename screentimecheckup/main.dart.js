@@ -90194,7 +90194,7 @@ var $async$J9=A.R(function(a,b){if(a===1)return A.N(b,r)
 for(;;)switch(s){case 0:p=new A.aG($.as,t._T)
 o=v.G.document.createElement("input")
 o.type="file"
-o.accept=".stc,.json,application/json"
+o.accept=".stc"
 o.addEventListener("change",A.h0(new A.a4P(o,new A.bM(p,t.I6))))
 o.click()
 q=p
