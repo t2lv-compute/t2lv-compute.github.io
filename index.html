@@ -14,6 +14,7 @@
             --border: #e0e0e0;
             --accent-green: #1B5E20;
             --accent-blue: #1565C0;
+            --accent-red: #650303;
         }
         @media (prefers-color-scheme: dark) {
             :root {
@@ -24,6 +25,7 @@
                 --border: #333;
                 --accent-green: #4CAF50;
                 --accent-blue: #42A5F5;
+                --accent-red: #F54242;
             }
         }
         * {
@@ -99,6 +101,11 @@
             background: var(--accent-blue);
             color: white;
         }
+        .project-icon.red {
+            background: var(--accent-red);
+            color: white;
+        }
+        
         .project-title {
             font-size: 1.25rem;
             font-weight: 600;
@@ -185,6 +192,23 @@
                 <div class="project-links">
                     <a href="/speechTimeEstimate/" class="link-btn primary blue">Open App</a>
                     <a href="https://github.com/t2lv-compute/speechTimeEstimate" class="link-btn secondary">Github Repo</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon red">&#x26A0;</div>
+                    <div class="project-title">Annoying App</div>
+                </div>
+                <p class="project-description">
+                    An annoying python app that opens a re-incarnating window which drifts around the screen. Nearly impossible to close without using the backdoor shortcut.
+                </p>
+                <div class="project-links">
+                    <a href="/screentimecheckup/" class="link-btn primary">Open Web Version</a>
+                    <a href="https://github.com/t2lv-compute/annoying/releases/tag/Python_Executive" class="link-btn secondary">Download .EXE</a>
+                    <a href="/annoying/instructions/" class="link-btn secondary">Instructions</a>
+                    <a href="https://github.com/t2lv-compute/annoying/blob/main/john-annoyance.py" class="link-btn secondary">Source Code</a>
+                    <a href="https://github.com/t2lv-compute/annoying" class="link-btn secondary">Github Repo</a>
                 </div>
             </div>
         </div>
