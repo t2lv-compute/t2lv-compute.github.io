@@ -3,48 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GG Development — a portfolio of productivity tools and projects including Screen Time Checkup, Speech Time Estimate, and more.">
+    <meta property="og:title" content="GG Development | Projects">
+    <meta property="og:description" content="A portfolio of productivity tools and projects including Screen Time Checkup, Speech Time Estimate, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t2lv-compute.github.io/">
     <title>GG Development | Projects</title>
     <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/styles.css">
     <style>
-        :root {
-            --bg: #fafafa;
-            --text: #1a1a1a;
-            --muted: #666;
-            --card-bg: #fff;
-            --border: #e0e0e0;
-            --accent-green: #1B5E20;
-            --accent-blue: #1565C0;
-            --accent-red: #650303;
-        }
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg: #121212;
-                --text: #e0e0e0;
-                --muted: #999;
-                --card-bg: #1e1e1e;
-                --border: #333;
-                --accent-green: #4CAF50;
-                --accent-blue: #42A5F5;
-                --accent-red: #F54242;
-            }
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            padding: 24px;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
         header {
             text-align: center;
             margin-bottom: 48px;
@@ -105,7 +72,6 @@
             background: var(--accent-red);
             color: white;
         }
-        
         .project-title {
             font-size: 1.25rem;
             font-weight: 600;
@@ -159,65 +125,68 @@
     </style>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class="container">
         <header>
             <h1>GG Development</h1>
             <p class="subtitle">Projects & Tools</p>
         </header>
 
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-icon green">&#9201;</div>
-                    <div class="project-title">Screen Time Checkup</div>
-                </div>
-                <p class="project-description">
-                    A productivity app that helps you stay aware of how you spend your time with periodic check-in reminders. Track what you're doing vs. what you should be doing.
-                </p>
-                <div class="project-links">
-                    <a href="/screentimecheckup/" class="link-btn primary">Open Web App</a>
-                    <a href="https://drive.google.com/drive/folders/19idVhAtkhv71fICFYqlTxo7jnJPaI4Sa?usp=sharing" class="link-btn secondary">Download APK</a>
-                    <a href="/privacy-policy/" class="link-btn secondary">Privacy Policy</a>
-                    <a href="https://forms.gle/bw5Lekf1AjL6fF4eA" class="link-btn secondary">Submit Feedback</a>
-                    <a href="https://github.com/t2lv-compute/screentimecheckup" class="link-btn secondary">Github Repo</a>
-                </div>
-            </div>
+        <main id="main">
+            <h2>Projects</h2>
+            <div class="projects">
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon green" aria-hidden="true">&#9201;</div>
+                        <h3 class="project-title">Screen Time Checkup</h3>
+                    </div>
+                    <p class="project-description">
+                        A productivity app that helps you stay aware of how you spend your time with periodic check-in reminders. Track what you're doing vs. what you should be doing.
+                    </p>
+                    <div class="project-links">
+                        <a href="/screentimecheckup/" class="link-btn primary">Open Web App</a>
+                        <a href="https://drive.google.com/drive/folders/19idVhAtkhv71fICFYqlTxo7jnJPaI4Sa?usp=sharing" class="link-btn secondary" rel="noopener noreferrer" target="_blank">Download APK</a>
+                        <a href="/privacy-policy/" class="link-btn secondary">Privacy Policy</a>
+                        <a href="https://forms.gle/bw5Lekf1AjL6fF4eA" class="link-btn secondary" rel="noopener noreferrer" target="_blank">Submit Feedback</a>
+                        <a href="https://github.com/t2lv-compute/screentimecheckup" class="link-btn secondary" rel="noopener noreferrer" target="_blank">GitHub Repo</a>
+                    </div>
+                </article>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-icon blue">&#127908;</div>
-                    <div class="project-title">Speech Time Estimate</div>
-                </div>
-                <p class="project-description">
-                    Estimate how long it will take to deliver a speech or presentation based on your script's word count and speaking pace.
-                </p>
-                <div class="project-links">
-                    <a href="/speechTimeEstimate/" class="link-btn primary blue">Open App</a>
-                    <a href="https://github.com/t2lv-compute/speechTimeEstimate" class="link-btn secondary">Github Repo</a>
-                </div>
-            </div>
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon blue" aria-hidden="true">&#127908;</div>
+                        <h3 class="project-title">Speech Time Estimate</h3>
+                    </div>
+                    <p class="project-description">
+                        Estimate how long it will take to deliver a speech or presentation based on your script's word count and speaking pace.
+                    </p>
+                    <div class="project-links">
+                        <a href="/speechTimeEstimate/" class="link-btn primary blue">Open App</a>
+                        <a href="https://github.com/t2lv-compute/speechTimeEstimate" class="link-btn secondary" rel="noopener noreferrer" target="_blank">GitHub Repo</a>
+                    </div>
+                </article>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-icon red">&#x26A0;</div>
-                    <div class="project-title">Annoying App</div>
-                </div>
-                <p class="project-description">
-                    An annoying python app that opens a re-incarnating window which drifts around the screen. Nearly impossible to close without using the backdoor shortcut.
-                </p>
-                <div class="project-links">
-                    <a href="/annoying/" class="link-btn primary red">Open Web Version</a>
-                    <a href="https://github.com/t2lv-compute/annoying/releases/tag/Python_Executive" class="link-btn secondary">Download .EXE</a>
-                    <a href="/annoying/instructions/" class="link-btn secondary">Instructions</a>
-                    <a href="https://github.com/t2lv-compute/annoying/blob/main/john-annoyance.py" class="link-btn secondary">Source Code</a>
-                    <a href="https://github.com/t2lv-compute/annoying" class="link-btn secondary">Github Repo</a>
-                </div>
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon red" aria-hidden="true">&#x26A0;</div>
+                        <h3 class="project-title">Annoying App</h3>
+                    </div>
+                    <p class="project-description">
+                        An annoying python app that opens a re-incarnating window which drifts around the screen. Nearly impossible to close without using the backdoor shortcut.
+                    </p>
+                    <div class="project-links">
+                        <a href="/annoying/" class="link-btn primary red">Open Web Version</a>
+                        <a href="https://github.com/t2lv-compute/annoying/releases/tag/Python_Executive" class="link-btn secondary" rel="noopener noreferrer" target="_blank">Download .EXE</a>
+                        <a href="/annoying/instructions/" class="link-btn secondary">Instructions</a>
+                        <a href="https://github.com/t2lv-compute/annoying/blob/main/john-annoyance.py" class="link-btn secondary" rel="noopener noreferrer" target="_blank">Source Code</a>
+                        <a href="https://github.com/t2lv-compute/annoying" class="link-btn secondary" rel="noopener noreferrer" target="_blank">GitHub Repo</a>
+                    </div>
+                </article>
             </div>
-        </div>
+        </main>
 
         <footer>
-            <p><a href="https://github.com/t2lv-compute">GitHub</a></p>
+            <p><a href="https://github.com/t2lv-compute" rel="noopener noreferrer" target="_blank">GitHub</a></p>
         </footer>
     </div>
 </body>
