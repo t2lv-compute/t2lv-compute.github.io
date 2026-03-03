@@ -7,6 +7,7 @@
     --accent-green: #1B5E20;
     --accent-blue: #1565C0;
     --accent-red: #650303;
+    --accent-purple: #4338ca;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +20,7 @@
         --accent-green: #4CAF50;
         --accent-blue: #42A5F5;
         --accent-red: #F54242;
+        --accent-purple: #818cf8;
     }
 }
 
